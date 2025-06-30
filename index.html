@@ -37,7 +37,7 @@ window.addEventListener('pageshow', function (event) {if (event.persisted) {wind
 </script>
 <div style="background-color: #444444; border-radius: 0px; color: white; font-family: sans-serif; margin: auto; max-width: 700px; padding: 20px;">
 <div style="align-items: center; display: flex; gap: 15px; margin-bottom: 20px;">
-<img alt="أيقونة التطبيق" src="https://k.top4top.io/p_34309brqf60.png" style="border-radius: 15px; height: 80px; object-fit: cover; width: 80px;" />
+<img alt="أيقونة التطبيق" src="https://k.top4top.io/p_3453p58ce0.jpg" style="border-radius: 15px; height: 80px; object-fit: cover; width: 80px;" />
 <div>
 <h2 style="margin: 0px;">ChestMC</h2>
 <p style="color: #cccccc; font-size: 14px; margin: 3px 0px;">Chest بالعربي</p>
@@ -45,26 +45,26 @@ window.addEventListener('pageshow', function (event) {if (event.persisted) {wind
 </div>
 <div style="background-color: #333333; border-radius: 8px; font-size: 14px; margin-bottom: 15px; overflow-x: auto; padding: 10px; white-space: nowrap;">
 <span id="downloads" style="margin-right: 20px;">[ التحميلات: ⌕ ]</span>
-<span id="size" style="margin-right: 20px;">[ 28MB ]</span>
-<span id="version" style="margin-right: 20px;">[ v2.4 ]</span>
-<span id="date" style="margin-right: 20px;">[ 2025/02/28 ]</span>
+<span id="size" style="margin-right: 20px;">[ 35MB ]</span>
+<span id="version" style="margin-right: 20px;">[ v1 ]</span>
+<span id="date" style="margin-right: 20px;">[ 2025/02/30 ]</span>
 <span id="platform" style="margin-right: 20px;">[ Android ]</span>
-<span id="author" style="margin-right: 20px;">[ kingX ]</span>
+<span id="author" style="margin-right: 20px;">[ king X ]</span>
 </div>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
 <div id="tip-toast" style="align-items: center; background: rgb(46, 46, 46); border-radius: 10px; box-shadow: rgb(0, 0, 0) 0px 0px 10px; color: white; display: flex; font-size: 13px; gap: 10px; max-width: 320px; opacity: 0; padding: 10px 15px; position: fixed; right: 20px; top: 20px; transform: translateY(-150%); transition: transform 0.4s, opacity 0.4s; z-index: 9999;"><i class="fa-solid fa-circle-info" id="tip-icon" style="font-size: 16px;"></i><span id="tip-text"></span></div><style>#counter,#tip-size,#tip-version,#tip-date,#tip-platform,#tip-author{cursor:pointer;outline:none;user-select:none}</style><script>const tips={downloads:
 ["fa-chart-column","عدد مرات الضغط على زر التحميل ."],
 "size":
-["fa-box-archive","حجم التطبيق الكامل قبل التثبيت (28.9MB) ."],
+["fa-box-archive","حجم التطبيق الكامل قبل التثبيت (35.47MB) ."],
 "version":
 ["fa-code-branch","رقم آخر إصدار للتطبيق (v1) ."],
 "date":
 ["fa-calendar-days",
-"تاريخ نشر هذا الإصدار (2025/05/26) ."],
+"تاريخ نشر هذا الإصدار (2025/05/30) ."],
 "platform":
 ["fab fa-android","نظام التشغيل المدعوم: أندرويد فقط ."],
 "author":
-["fa-user-gear","صاحب التطبيق و أحد أعضاء الأستوديو ."]
+["fa-user-gear","صاحب التطبيق و صفحة <b>Chest بالعربي</b> ."]
 };let isShowing=!1,pendingTip=null;for(const id in tips){const el=document.getElementById(id);el&&el.addEventListener("click",e=>{e.stopPropagation(),isShowing?(pendingTip=tips[id],hideTip(!0)):showTip(...tips[id])})}function showTip(e,t){const i=document.getElementById("tip-toast"),n=document.getElementById("tip-icon"),o=document.getElementById("tip-text");n.className=e.includes("fab")?`fab ${e.split(" ")[1]}`:`fa-solid ${e}`,o.textContent=t,i.style.display="flex",requestAnimationFrame(()=>{i.style.opacity="1",i.style.transform="translateY(0)",isShowing=!0}),clearTimeout(window.toastTimer),window.toastTimer=setTimeout(()=>hideTip(!1),4e3)}function hideTip(e){const t=document.getElementById("tip-toast");t.style.opacity="0",t.style.transform="translateY(-150%)",isShowing=!1,clearTimeout(window.toastTimer),setTimeout(()=>{t.style.display="none",e&&pendingTip&&(showTip(...pendingTip),pendingTip=null)},400)}document.addEventListener("click",()=>{isShowing&&hideTip(!1)});</script>
 <div style="margin: 20px auto; padding: 0px 10px; text-align: center;">
 <a href="https://github.com/tamaa-pro/Minecraft_Library/releases/download/v2.4/library_2.4.apk" id="downloadBtn" onclick="startDownload(event)" style="background-color: #4caf50; border-radius: 8px; color: white; cursor: pointer; display: inline-block; font-size: 14px; max-width: 450px; padding: 14px 0px; text-decoration: none; width: 100%;">تحميل التطبيق</a>
@@ -87,7 +87,7 @@ function startDownload(event) {const btn = event.currentTarget;btn.innerHTML = '
 const style = document.createElement('style');style.textContent = `@keyframes spin {0% { transform: rotate(0deg); }100% { transform: rotate(360deg); }}a:focus {outline: none !important;box-shadow: none !important;}`;document.head.appendChild(style);
 </script>
 <script>
-(function(){const a=document.getElementById("downloads"),b=document.getElementById("downloadBtn"),c="683f23508960c979a5a4d239",d="$2a$10$F5TR7pSKPRRNAeBzsdxQ4.NYog8xHGUi0hektkor0q/QWFVXzba3q";async function e(){try{const f=await fetch(`https://api.jsonbin.io/v3/b/${c}/latest`,{headers:{"X-Master-Key":d}}),g=await f.json(),h=g.record.count||0;a.textContent=`[ التحميلات: ${h} ]`}catch(i){a.textContent="[ التحميلات: غير متوفرة ]",console.error(i)}}async function j(){try{if(sessionStorage.getItem("alreadyDownloaded"))return;const k=await fetch(`https://api.jsonbin.io/v3/b/${c}/latest`,{headers:{"X-Master-Key":d}}),l=await k.json();let m=l.record.count||0;m++;await fetch(`https://api.jsonbin.io/v3/b/${c}`,{method:"PUT",headers:{"Content-Type":"application/json","X-Master-Key":d,"X-Bin-Versioning":"false"},body:JSON.stringify({count:m})});a.textContent=`[ التحميلات: ${m} ]`;sessionStorage.setItem("alreadyDownloaded","true")}catch(n){alert("[ فشل تحديث عدد التحميلات ]"),console.error(n)}}e(),b.addEventListener("click",j)})();
+(function(){const a=document.getElementById("downloads"),b=document.getElementById("downloadBtn"),c="684f10a68960c979a5aa6d63",d="$2a$10$F5TR7pSKPRRNAeBzsdxQ4.NYog8xHGUi0hektkor0q/QWFVXzba3q";async function e(){try{const f=await fetch(`https://api.jsonbin.io/v3/b/${c}/latest`,{headers:{"X-Master-Key":d}}),g=await f.json(),h=g.record.count||0;a.textContent=`[ التحميلات: ${h} ]`}catch(i){a.textContent="[ التحميلات: غير متوفرة ]",console.error(i)}}async function j(){try{if(sessionStorage.getItem("alreadyDownloaded"))return;const k=await fetch(`https://api.jsonbin.io/v3/b/${c}/latest`,{headers:{"X-Master-Key":d}}),l=await k.json();let m=l.record.count||0;m++;await fetch(`https://api.jsonbin.io/v3/b/${c}`,{method:"PUT",headers:{"Content-Type":"application/json","X-Master-Key":d,"X-Bin-Versioning":"false"},body:JSON.stringify({count:m})});a.textContent=`[ التحميلات: ${m} ]`;sessionStorage.setItem("alreadyDownloaded","true")}catch(n){alert("[ فشل تحديث عدد التحميلات ]"),console.error(n)}}e(),b.addEventListener("click",j)})();
 </script>
 <txt style="color:#00F500">لقطات من التطبيق :</txt>
 <style>
@@ -100,23 +100,23 @@ const style = document.createElement('style');style.textContent = `@keyframes sp
 <div class="ss-track" id="ssContainer"></div>
 <script>
 const images=[
-["",
- ""],
-["",
- ""],
-["",
- ""],
-["",
- ""],
-["",
- ""],
-["",
- ""],
+["https://j.top4top.io/p_3453fkwac5.jpg",
+ "الصفحة الرئيسية"],
+["https://j.top4top.io/p_3453fkwac5.jpg",
+ "تحديثات ماين كرافت"],
+["https://h.top4top.io/p_3453viwjq3.jpg",
+ "أنواع المودات"],
+["https://g.top4top.io/p_3453fer8u2.jpg",
+ "المودات"],
+["https://f.top4top.io/p_3453324bu1.jpg",
+ "الإصدارات"],
+["https://e.top4top.io/p_3453667io0.jpg",
+ "السيدات"],
 ];const container=document.getElementById("ssContainer");const elements=[];images.forEach(([src,alt])=>{const wrap=document.createElement("div");wrap.className="ss-item";const spinner=document.createElement("div");spinner.className="ss-spinner";const img=document.createElement("img");img.alt=alt;wrap.appendChild(spinner);wrap.appendChild(img);container.appendChild(wrap);elements.push({img,spinner,src});});function loadSequential(index=0){if(index>=elements.length)return;const {img,spinner,src}=elements[index];const image=new Image();image.onload=()=>{img.src=src;img.style.display="block";spinner.remove();loadSequential(index+1);};image.onerror=()=>{spinner.style.borderTopColor="red";loadSequential(index+1)};image.src=src;}loadSequential();
 </script>
 <br /><hr />
 <p style="line-height: 1.6;">
-  ✦ 
+  ✦  تطبيق لتحميل ماين كرافت ومودات ، والبحث عن افضل سيدات .
 <hr />
 <chest style="color: #cccccc; font-size: 14px;">
     ⚠️ هذا التطبيق غير رسمي ولا يتبع Mojang أو Microsoft .
@@ -134,9 +134,10 @@ const images=[
 <div id="infoPanel">
 <chest>تاريخ إنشاء الصفحة: 2025/06/01</chest><br/>
 <chest>تاريخ آخر تحديث للصفحة: 2025/06/30</chest><br/>
-<chest>تاريخ آخر تحديث لحزمة التطبيق (v1): 2025/05/26</chest><br/>
-<chest>المالك: King X</chest><br/>
-<chest>مدعوم من طرف: TAMAA PRODUCTION STUDIOS</chest>
+<chest>تاريخ آخر تحديث لحزمة التطبيق (v1): 2025/05/30</chest><br/>
+<chest>المالك : King X</chest><br/>
+<chest>تابع لطرف : Chest بالعربي</chest>
+<chest>مدعوم من طرف : TAMAA PRODUCTION STUDIOS</chest>
 </div>
 <script>
 const toggle = document.getElementById('infoToggle');const panel = document.getElementById('infoPanel');toggle.addEventListener('click', () => {panel.classList.toggle('open');toggle.textContent = panel.classList.contains('open') ? "إخفاء معلومات الصفحة": "عرض معلومات الصفحة";});
