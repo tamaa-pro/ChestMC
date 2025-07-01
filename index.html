@@ -64,7 +64,7 @@ window.addEventListener('pageshow', function (event) {if (event.persisted) {wind
 "platform":
 ["fab fa-android","نظام التشغيل المدعوم: أندرويد فقط ."],
 "author":
-["fa-user-gear","صاحب التطبيق و صفحة <b>Chest بالعربي</b> ."]
+["fa-user-gear","صاحب التطبيق و صفحة Chest بالعربي ."]
 };let isShowing=!1,pendingTip=null;for(const id in tips){const el=document.getElementById(id);el&&el.addEventListener("click",e=>{e.stopPropagation(),isShowing?(pendingTip=tips[id],hideTip(!0)):showTip(...tips[id])})}function showTip(e,t){const i=document.getElementById("tip-toast"),n=document.getElementById("tip-icon"),o=document.getElementById("tip-text");n.className=e.includes("fab")?`fab ${e.split(" ")[1]}`:`fa-solid ${e}`,o.textContent=t,i.style.display="flex",requestAnimationFrame(()=>{i.style.opacity="1",i.style.transform="translateY(0)",isShowing=!0}),clearTimeout(window.toastTimer),window.toastTimer=setTimeout(()=>hideTip(!1),4e3)}function hideTip(e){const t=document.getElementById("tip-toast");t.style.opacity="0",t.style.transform="translateY(-150%)",isShowing=!1,clearTimeout(window.toastTimer),setTimeout(()=>{t.style.display="none",e&&pendingTip&&(showTip(...pendingTip),pendingTip=null)},400)}document.addEventListener("click",()=>{isShowing&&hideTip(!1)});</script>
 <div style="margin: 20px auto; padding: 0px 10px; text-align: center;">
 <a href="https://github.com/tamaa-pro/ChestMC/releases/download/v1/ChestMC.apk" id="downloadBtn" onclick="startDownload(event)" style="background-color: #4caf50; border-radius: 8px; color: white; cursor: pointer; display: inline-block; font-size: 14px; max-width: 450px; padding: 14px 0px; text-decoration: none; width: 100%;">تحميل التطبيق</a>
@@ -132,12 +132,13 @@ const images=[
 </style>
 <div id="infoToggle">عرض معلومات الصفحة</div>
 <div id="infoPanel">
-<chest>تاريخ إنشاء الصفحة: 2025/06/01</chest><br/>
-<chest>تاريخ آخر تحديث للصفحة: 2025/06/30</chest><br/>
-<chest>تاريخ آخر تحديث لحزمة التطبيق (v1): 2025/05/30</chest><br/>
-<chest>المالك : King X</chest><br/>
-<chest>تابع لطرف : Chest بالعربي</chest>
-<chest>مدعوم من طرف : TAMAA PRODUCTION STUDIOS</chest>
+<tps>تاريخ إنشاء الصفحة: 2025/06/01</tps><br>
+<tps>تاريخ آخر تحديث للصفحة: 2025/07/01</tps><br>
+<tps>رمز التعديل : 17-12.57</tps><br>
+<tps>تاريخ آخر تحديث لحزمة التطبيق (v1): 2025/05/30</tps><br>
+<tps>المالك : King X</tps><br>
+<tps>تابع لطرف : Chest بالعربي</tps><br>
+<tps>مدعوم من طرف : TAMAA PRODUCTION STUDIOS</tps>
 </div>
 <script>
 const toggle = document.getElementById('infoToggle');const panel = document.getElementById('infoPanel');toggle.addEventListener('click', () => {panel.classList.toggle('open');toggle.textContent = panel.classList.contains('open') ? "إخفاء معلومات الصفحة": "عرض معلومات الصفحة";});
